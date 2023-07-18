@@ -6,24 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="/index.css", type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <i class="fas fa-bars"></i>
-            <div id="sidebar" class="hide">
-                <ul>
-                    <li>Home</li>
-                    <li>Settings</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
-        <div>
-            <h1 id="main-heading" class="small">Add/Remove Classes</h1>
-            <button id="button-click"> Click Me!!! </button>
-        </div>
+        <form id="login-form">
+            <input id="username" type="type" name="username" placeholder="Username" required/>
+            <input id="password" type="password" name="password" placeholder="Password" required/>
+            <input id="btn-submit" type="submit" value="Login"/>
+        </form>
     </header>
     <script src="/index.js"></script>
 </body>
