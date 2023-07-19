@@ -40,19 +40,41 @@
 //     alert('Submit button clicked!');
 //     e.preventDefault();
 // });
-document.body.addEventListener('keydown', function(e) {
-    var keyCode = e.keyCode;
-    if(keyCode === 13)
-        console.log(keyCode + ' keydown');
-});
+// document.body.addEventListener('keydown', function(e) {
+//     var keyCode = e.keyCode;
+//     if(keyCode === 13)
+//         console.log(keyCode + ' keydown');
+// });
 
-document.body.addEventListener('keyup', function(e) {
-    var keyCode = e.keyCode;
-    if(keyCode === 13)
-        console.log(keyCode + ' keyup');
+// document.body.addEventListener('keyup', function(e) {
+//     var keyCode = e.keyCode;
+//     if(keyCode === 13)
+//         console.log(keyCode + ' keyup');
+// });
+// document.body.addEventListener('keypress', function(e) {
+//     var keyCode = e.keyCode;
+//     if(keyCode === 13)
+//         console.log(keyCode + ' keypress');
+// });
+var overCount = 0;
+var enterCount = 0;
+var moveCount = 0;
+var over = document.getElementById("over");
+var enter = document.getElementById('enter');
+var move = document.getElementById('move');
+var btn = document.getElementById('top-btn');
+over.addEventListener('mouseover', function() {
+    var countElement = document.querySelector('#over > p');
+    overCount += 1;
+    countElement.innerHTML = overCount;
 });
-document.body.addEventListener('keypress', function(e) {
-    var keyCode = e.keyCode;
-    if(keyCode === 13)
-        console.log(keyCode + ' keypress');
+enter.addEventListener('mouseenter', function() {
+    var countElement = document.querySelector('#enter > p');
+    enterCount += 1;
+    countElement.innerHTML = enterCount;
+});
+move.addEventListener('mousemove', function() {
+    var countElement = document.querySelector('#move > p');
+    moveCount += 1;
+    countElement.innerHTML = moveCount;
 });

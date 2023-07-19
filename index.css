@@ -1,33 +1,35 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: lightblue;
 }
-#login-form {
-    background-color: rgb(203, 169, 169);
-    height: 220px;
-    width: 300px;
-    top: 50%;
-    margin-left: 20%;
-    padding: 10px 10px 10px 15px;
-    margin-top: 100px;
-    overflow: hidden;
+#top-btn {
+    height: 50px;
+    width: 150px;
+    padding: 0px;
+    font-size: 24px;
+    top: 20px;
+    left: 30%;
+    position:relative;
 }
 
-#username {
-    width: 280px;
-    height: 50px;
-    border: none;
-    margin: 10px;
+#over {
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+    position: relative;
+    font-size: 24px;
 }
-#password {
-    width: 280px;
-    height: 50px;
-    border: none;
-    margin: 10px;
+#enter {
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+    position: relative;
+    font-size: 24px;
 }
-#btn-submit {
-    width: 280px;
-    height: 50px;
-    margin: 10px;
+#move {
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+    position: relative;
+    font-size: 24px;
 }
