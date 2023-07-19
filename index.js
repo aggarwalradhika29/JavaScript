@@ -20,23 +20,39 @@
     
 // }, 1500);
 
-var username = document.getElementById('username');
-username.addEventListener('input', function(event) {
-    var currentValue = event.target.value;
-    currentValue = currentValue.toUpperCase();
-    console.log(currentValue);
-    username.value = currentValue;
+// var username = document.getElementById('username');
+// username.addEventListener('input', function(event) {
+//     var currentValue = event.target.value;
+//     currentValue = currentValue.toUpperCase();
+//     console.log(currentValue);
+//     username.value = currentValue;
+// });
+
+// username.addEventListener('focus', function() {
+//     console.log("Element focused!");
+// });
+// username.addEventListener('blur', function() {
+//     console.log('Lost focus!');
+// });
+
+// var loginForm = document.getElementById("login-form");
+// loginForm.addEventListener('submit', function(e) {
+//     alert('Submit button clicked!');
+//     e.preventDefault();
+// });
+document.body.addEventListener('keydown', function(e) {
+    var keyCode = e.keyCode;
+    if(keyCode === 13)
+        console.log(keyCode + ' keydown');
 });
 
-username.addEventListener('focus', function() {
-    console.log("Element focused!");
+document.body.addEventListener('keyup', function(e) {
+    var keyCode = e.keyCode;
+    if(keyCode === 13)
+        console.log(keyCode + ' keyup');
 });
-username.addEventListener('blur', function() {
-    console.log('Lost focus!');
-});
-
-var loginForm = document.getElementById("login-form");
-loginForm.addEventListener('submit', function(e) {
-    alert('Submit button clicked!');
-    e.preventDefault();
+document.body.addEventListener('keypress', function(e) {
+    var keyCode = e.keyCode;
+    if(keyCode === 13)
+        console.log(keyCode + ' keypress');
 });
